@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42BCF8F7865432570701565F /* Pods_SfPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6140DC51F30999993BEAAF /* Pods_SfPlus.framework */; };
 		C5667AE32049281A00CA1ADF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5667AE22049281A00CA1ADF /* AppDelegate.swift */; };
 		C5667AE52049281A00CA1ADF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5667AE42049281A00CA1ADF /* ViewController.swift */; };
 		C5667AE82049281A00CA1ADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5667AE62049281A00CA1ADF /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EA78CE9A576B8AAB94A4793 /* Pods-SfPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SfPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SfPlus/Pods-SfPlus.debug.xcconfig"; sourceTree = "<group>"; };
+		48C0CB9F9F64DB1956AEB48A /* Pods-SfPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SfPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-SfPlus/Pods-SfPlus.release.xcconfig"; sourceTree = "<group>"; };
 		C5667ADF2049281A00CA1ADF /* SfPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SfPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5667AE22049281A00CA1ADF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5667AE42049281A00CA1ADF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C5667AE92049281A00CA1ADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5667AEC2049281A00CA1ADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5667AEE2049281B00CA1ADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE6140DC51F30999993BEAAF /* Pods_SfPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SfPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42BCF8F7865432570701565F /* Pods_SfPlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EFF53FEE49E745CA6E6D88C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE6140DC51F30999993BEAAF /* Pods_SfPlus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1A7D1F1E60DC969043DC973 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EA78CE9A576B8AAB94A4793 /* Pods-SfPlus.debug.xcconfig */,
+				48C0CB9F9F64DB1956AEB48A /* Pods-SfPlus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C5667AD62049281A00CA1ADF = {
 			isa = PBXGroup;
 			children = (
 				C5667AE12049281A00CA1ADF /* SfPlus */,
 				C5667AE02049281A00CA1ADF /* Products */,
+				A1A7D1F1E60DC969043DC973 /* Pods */,
+				9EFF53FEE49E745CA6E6D88C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5667AF12049281B00CA1ADF /* Build configuration list for PBXNativeTarget "SfPlus" */;
 			buildPhases = (
+				19BD0E12AB248BB60261B243 /* [CP] Check Pods Manifest.lock */,
 				C5667ADB2049281A00CA1ADF /* Sources */,
 				C5667ADC2049281A00CA1ADF /* Frameworks */,
 				C5667ADD2049281A00CA1ADF /* Resources */,
+				66A942DCD7AACAE82E5BC81B /* [CP] Embed Pods Frameworks */,
+				374EDE602F8BC7944318D03E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19BD0E12AB248BB60261B243 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SfPlus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		374EDE602F8BC7944318D03E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SfPlus/Pods-SfPlus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66A942DCD7AACAE82E5BC81B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SfPlus/Pods-SfPlus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SfPlus/Pods-SfPlus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C5667ADB2049281A00CA1ADF /* Sources */ = {
@@ -272,6 +359,7 @@
 		};
 		C5667AF22049281B00CA1ADF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA78CE9A576B8AAB94A4793 /* Pods-SfPlus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +375,7 @@
 		};
 		C5667AF32049281B00CA1ADF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C0CB9F9F64DB1956AEB48A /* Pods-SfPlus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
